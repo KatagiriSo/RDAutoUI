@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+typealias RDAnyCommand = (Any?) -> Void
+typealias RDCommand = (RDEvent) -> Void
+typealias RDCancel = ()->Void

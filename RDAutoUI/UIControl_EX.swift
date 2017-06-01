@@ -6,4 +6,12 @@
 //  Copyright © 2017年 rodhos. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+extension UIControl {
+    func addTarget(event:UIControlEvents, observer:RDTargetObserver) -> RDTargetObserver {
+        self.addTarget(observer, action: #selector(observer.selectorFunc(sender:)), for: event)
+        return observer
+    }
+}

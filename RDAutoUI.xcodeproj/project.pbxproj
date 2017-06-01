@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320BB24F1EDEB0A000BAF62C /* RDObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BB24E1EDEB0A000BAF62C /* RDObservable.swift */; };
+		320BB2511EDEB0BD00BAF62C /* RDCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BB2501EDEB0BD00BAF62C /* RDCommand.swift */; };
+		320BB2551EDEB0EC00BAF62C /* RDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BB2541EDEB0EC00BAF62C /* RDEvent.swift */; };
+		320BB2571EDEB11F00BAF62C /* RDObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BB2561EDEB11F00BAF62C /* RDObservers.swift */; };
+		320BB2591EDEB18200BAF62C /* RDSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BB2581EDEB18200BAF62C /* RDSampleViewController.swift */; };
+		320BB25B1EDEB23F00BAF62C /* RDObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BB25A1EDEB23F00BAF62C /* RDObserver.swift */; };
 		324AB5BD1EC2E91300328F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5BC1EC2E91300328F8E /* AppDelegate.swift */; };
-		324AB5BF1EC2E91300328F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5BE1EC2E91300328F8E /* ViewController.swift */; };
+		324AB5BF1EC2E91300328F8E /* RDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5BE1EC2E91300328F8E /* RDViewController.swift */; };
 		324AB5C21EC2E91300328F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324AB5C01EC2E91300328F8E /* Main.storyboard */; };
 		324AB5C41EC2E91300328F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324AB5C31EC2E91300328F8E /* Assets.xcassets */; };
 		324AB5C71EC2E91300328F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324AB5C51EC2E91300328F8E /* LaunchScreen.storyboard */; };
 		324AB5D21EC2E91300328F8E /* RDAutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5D11EC2E91300328F8E /* RDAutoUITests.swift */; };
 		324AB5DD1EC2E91300328F8E /* RDAutoUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AB5DC1EC2E91300328F8E /* RDAutoUIUITests.swift */; };
+		32DDBC331EE00FDA00A0C75E /* RDAutoLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDBC321EE00FDA00A0C75E /* RDAutoLayoutHelper.swift */; };
+		32DDBC351EE011F200A0C75E /* UIControl_EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDBC341EE011F200A0C75E /* UIControl_EX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320BB24E1EDEB0A000BAF62C /* RDObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDObservable.swift; sourceTree = "<group>"; };
+		320BB2501EDEB0BD00BAF62C /* RDCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDCommand.swift; sourceTree = "<group>"; };
+		320BB2541EDEB0EC00BAF62C /* RDEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDEvent.swift; sourceTree = "<group>"; };
+		320BB2561EDEB11F00BAF62C /* RDObservers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDObservers.swift; sourceTree = "<group>"; };
+		320BB2581EDEB18200BAF62C /* RDSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDSampleViewController.swift; sourceTree = "<group>"; };
+		320BB25A1EDEB23F00BAF62C /* RDObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDObserver.swift; sourceTree = "<group>"; };
 		324AB5B91EC2E91300328F8E /* RDAutoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDAutoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324AB5BC1EC2E91300328F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		324AB5BE1EC2E91300328F8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		324AB5BE1EC2E91300328F8E /* RDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDViewController.swift; sourceTree = "<group>"; };
 		324AB5C11EC2E91300328F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		324AB5C31EC2E91300328F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324AB5C61EC2E91300328F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,8 @@
 		324AB5D81EC2E91300328F8E /* RDAutoUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDAutoUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324AB5DC1EC2E91300328F8E /* RDAutoUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDAutoUIUITests.swift; sourceTree = "<group>"; };
 		324AB5DE1EC2E91300328F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DDBC321EE00FDA00A0C75E /* RDAutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDAutoLayoutHelper.swift; sourceTree = "<group>"; };
+		32DDBC341EE011F200A0C75E /* UIControl_EX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControl_EX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320BB25C1EDEB83200BAF62C /* RDAutoUI */ = {
+			isa = PBXGroup;
+			children = (
+				32DDBC321EE00FDA00A0C75E /* RDAutoLayoutHelper.swift */,
+				324AB5BE1EC2E91300328F8E /* RDViewController.swift */,
+				320BB25A1EDEB23F00BAF62C /* RDObserver.swift */,
+				320BB24E1EDEB0A000BAF62C /* RDObservable.swift */,
+				320BB2501EDEB0BD00BAF62C /* RDCommand.swift */,
+				320BB2541EDEB0EC00BAF62C /* RDEvent.swift */,
+				320BB2561EDEB11F00BAF62C /* RDObservers.swift */,
+				32DDBC341EE011F200A0C75E /* UIControl_EX.swift */,
+			);
+			name = RDAutoUI;
+			sourceTree = "<group>";
+		};
 		324AB5B01EC2E91300328F8E = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +128,9 @@
 		324AB5BB1EC2E91300328F8E /* RDAutoUI */ = {
 			isa = PBXGroup;
 			children = (
+				320BB25C1EDEB83200BAF62C /* RDAutoUI */,
 				324AB5BC1EC2E91300328F8E /* AppDelegate.swift */,
-				324AB5BE1EC2E91300328F8E /* ViewController.swift */,
+				320BB2581EDEB18200BAF62C /* RDSampleViewController.swift */,
 				324AB5C01EC2E91300328F8E /* Main.storyboard */,
 				324AB5C31EC2E91300328F8E /* Assets.xcassets */,
 				324AB5C51EC2E91300328F8E /* LaunchScreen.storyboard */,
@@ -262,8 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324AB5BF1EC2E91300328F8E /* ViewController.swift in Sources */,
+				320BB2551EDEB0EC00BAF62C /* RDEvent.swift in Sources */,
+				320BB25B1EDEB23F00BAF62C /* RDObserver.swift in Sources */,
+				320BB24F1EDEB0A000BAF62C /* RDObservable.swift in Sources */,
+				324AB5BF1EC2E91300328F8E /* RDViewController.swift in Sources */,
+				32DDBC351EE011F200A0C75E /* UIControl_EX.swift in Sources */,
+				320BB2571EDEB11F00BAF62C /* RDObservers.swift in Sources */,
 				324AB5BD1EC2E91300328F8E /* AppDelegate.swift in Sources */,
+				32DDBC331EE00FDA00A0C75E /* RDAutoLayoutHelper.swift in Sources */,
+				320BB2591EDEB18200BAF62C /* RDSampleViewController.swift in Sources */,
+				320BB2511EDEB0BD00BAF62C /* RDCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +554,7 @@
 				324AB5E31EC2E91300328F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		324AB5E41EC2E91300328F8E /* Build configuration list for PBXNativeTarget "RDAutoUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +563,7 @@
 				324AB5E61EC2E91300328F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		324AB5E71EC2E91300328F8E /* Build configuration list for PBXNativeTarget "RDAutoUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +572,7 @@
 				324AB5E91EC2E91300328F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

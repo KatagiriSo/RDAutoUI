@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol RDEvent {
+    func hit(event:RDEvent) -> Bool
+}
+
+extension RDEvent {
+    func hit(event:RDEvent) -> Bool {
+        return event is Self
+    }
+}

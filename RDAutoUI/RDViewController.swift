@@ -10,45 +10,23 @@ import UIKit
 
 struct RDViewDidLoad:RDEvent {}
 
-class RDSampleViewController : RDViewController {
-    override func awakeFromNib() {
-        
-        regist(event: RDViewDidLoad()) { _ in
-            print("viewDidLoad")
-        }
-        
-        regist(event: RDViewWillAppear(animated: true)) {_ in
-            print("viewWillAppear")
-        }
-        
-    }
-}
 
-
-class RDViewController: UIViewController,RDObservable {
+class RDViewController: UIViewController {
     
     struct RDViewDidLoad : RDEvent {}
     struct RDViewWillAppear : RDEvent {let animated:Bool}
     
     var observers:RDObservers = []
-    
-    func regist(event:RDEvent, command:@escaping RDCommand) -> RDCancel {
-        let observer = RDObserver(event: event, command:command, token
-        
-        self.observers.append(observer)
-        return {
-            self.observers.rem
-        }
-    }
+    var targetObservers:[RDTargetObserver] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tell(obserbvers: observers, event: RDViewDidLoad())
+        tell(observers: observers, event: RDViewDidLoad())
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
-        tell(obserbvers: observers, event: RDViewWillAppear(animated: animated))
+        tell(observers: observers, event: RDViewWillAppear(animated: animated))
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,17 +35,24 @@ class RDViewController: UIViewController,RDObservable {
     }
 }
 
-
-//struct RDObserver2 {
-//    let token:String
-//    let event:RDEvent
-//    let command:RDCommand
-//    init(event:RDEvent, command:RDCommand) {
-//        self.event = event
-//        self.command = command
-//        self.token =
-//
-//    }
-//}
-
-
+extension RDViewController: RDObservable {
+    func regist(event:RDEvent, command:@escaping RDCommand) -> RDObserver {
+        let observer = RDObserver(event:event, command:command)
+        
+        self.observers.append(observer)
+        observer.cancel = { [weak self] in
+            if let target = self {
+                target.observers = target.observers.filter { $0 != observer }
+            }
+        }
+        return observer
+    }
+    
+    func cancel(event: RDEvent) {
+        self.observers = self.observers.filter { !$0.event.hit(event: event) }
+    }
+    
+    func cancel() {
+        self.observers = []
+    }
+}

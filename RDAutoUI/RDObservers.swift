@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+typealias RDObservers = [RDObserver]
+
+func find(observers:RDObservers, event:RDEvent) -> RDObservers {
+    return observers.filter { $0.event.hit(event: event) }
+}
+
+func tell(observers:RDObservers, event:RDEvent) {
+    find(observers:observers , event: event).forEach { $0.command(event) }
+}

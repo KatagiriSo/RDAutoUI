@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol RDObservable {
+    func regist(event:RDEvent, command:@escaping RDCommand) -> RDObserver
+    func cancel(event:RDEvent)
+    func cancel()
+}
